@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience & Achievements | My Royal CV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">♕ MY ROYAL CV</a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a class="active" href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies-projects.html">Hobbies</a>
+      <a href="support-system.html">Support System</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section-heading">
+      <p class="eyebrow">Little victories, lasting memories</p>
+
+      <h1>
+        Experience &
+        <span class="gold">Achievements</span>
+      </h1>
+
+      <p>
+        Every experience teaches me something worth keeping.
+        These are the moments that have shaped my journey.
+      </p>
+
+      <div class="ornament">✧ ♕ ✧</div>
+    </section>
+
+    <!-- EXPERIENCE CARDS -->
+    <section class="grid-2">
+
+      <!-- CARD 1 -->
+      <article class="card experience-card">
+        <div class="image-frame">
+          <img src="pmc2.jpeg"
+               alt="Paskibra Putra Mahardhika Chakti"
+               class="experience-img">
+        </div>
+
+        <p class="year">2022-2025</p>
+        <h3>Organization Member</h3>
+        <p class="organization">PUMACHA COMPETITION</p>
+
+        <p>
+          I served in public relations and PDD, managing Instagram
+          content and maintaining relationships with other schools.
+          This experience helped me develop communication,
+          teamwork, and organizational skills.
+        </p>
+        
+
+        <div class="tag-list">
+          <span class="tag">Teamwork</span>
+          <span class="tag">Leadership</span>
+          <span class="tag">Public Relations</span>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card experience-card">
+        <div class="image-frame">
+          <img src="bldc2.0.jpeg"
+               alt="BLDC 2.0 volunteer activities"
+               class="experience-img">
+        </div>
+
+        <p class="year">2025</p>
+        <h3>Volunteer Committee</h3>
+        <p class="organization">BLDC 2.0</p>
+
+        <p>
+          I joined the PDD team as a volunteer, helping with
+          event documentation and publication. It was a valuable
+          opportunity to contribute to an event and work with
+          other committee members.
+        </p>
+
+        <div class="tag-list">
+          <span class="tag">Communication</span>
+          <span class="tag">Creativity</span>
+          <span class="tag">Teamwork</span>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card experience-card">
+        <div class="image-frame">
+          <img src="melostra.jpeg"
+               alt="MELOSTRA committee activities"
+               class="experience-img">
+        </div>
+
+        <p class="year">2026</p>
+        <h3>Committee Member</h3>
+        <p class="organization">MELOSTRA</p>
+
+        <p>
+          I was assigned to the equipment team, helping prepare
+          and organize the equipment needed for the event.
+          This role taught me to be more organized, responsible,
+          and attentive to detail.
+        </p>
+
+        <div class="tag-list">
+          <span class="tag">Planning</span>
+          <span class="tag">Responsibility</span>
+          <span class="tag">Organization</span>
+        </div>
+      </article>
+
+      
+      <!-- CARD 5 -->
+      <article class="card experience-card">
+        <div class="image-frame">
+          <img src="bldc3.jpeg"
+               alt="Competition and achievement memories"
+               class="experience-img">
+        </div>
+
+        <p class="year">2026</p>
+        <h3>Competition & Achievement</h3>
+        <p class="organization">
+          PIALA REKTOR UPNVJ
+        </p>
+
+        <p>
+          Not every journey ends with a win, but every experience teaches us something valuable. Grateful for the opportunity, the lessons, and the memories made along the way. Every step is part of becoming better. ♡
+        </p>
+
+      <!-- CARD 5 -->
+      <article class="card experience-card">
+        <div class="image-frame">
+          <img src="lima.jpeg"
+               alt="Competition and achievement memories"
+               class="experience-img">
+        </div>
+
+        <p class="year">2026</p>
+        <h3>Competition & Achievement</h3>
+        <p class="organization">
+          LIMA x UNIFEST
+        </p>
+
+        <p>
+          Although our team did not win at PIALA REKTOR,
+          we achieved third place at LIMA x UNIFEST.
+          This experience reminded me that teamwork,
+          perseverance, and the learning process matter.
+        </p>
+
+        <div class="tag-list">
+          <span class="tag">Achievement</span>
+          <span class="tag">Perseverance</span>
+          <span class="tag">Teamwork</span>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- NAVIGATION BUTTON -->
+    <div class="next-section">
+      <p class="eyebrow">Every small step deserves to be celebrated</p>
+      <a class="btn" href="skills.html">
+        The journey continues  →
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Not every experience can be fully described, but the ones shared here are the most meaningful and have played an important role in my growth. ♡</p>
+    <p class="footer-brand">✧ MY ROYAL CV ✧</p>
+  </footer>
+
+  <!-- JAVASCRIPT FLIP CARD -->
+  <script>
+    document.querySelectorAll('.flip-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        card.classList.toggle('is-flipped');
+      });
+
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+
+      card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          card.classList.toggle('is-flipped');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
