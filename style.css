@@ -1369,5 +1369,100 @@ footer p {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+
+    ```css
+/* =========================================
+   ROYAL SKILLS - CATEGORY & LEVEL BADGES
+   ========================================= */
+
+.skill-category {
+  margin-top: 24px;
+}
+
+.skill-category-title {
+  color: var(--gold);
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  color: var(--beige);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(199, 161, 90, 0.15);
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+}
+
+.skill-level {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 5px 11px;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.skill-level.advanced {
+  color: var(--gold);
+  background: rgba(199, 161, 90, 0.12);
+  border: 1px solid var(--gold);
+}
+
+.skill-level.intermediate {
+  color: var(--beige);
+  background: rgba(155, 38, 59, 0.2);
+  border: 1px solid var(--burgundy-light);
+}
+
+.skill-level.beginner {
+  color: var(--muted-ink);
+  background: rgba(224, 199, 181, 0.06);
+  border: 1px solid rgba(224, 199, 181, 0.3);
+}
+
+.skill-item:hover .skill-level {
+  transform: translateY(-1px);
+}
+
+.skills-cta {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  .skill-category {
+    margin-top: 20px;
+  }
+
+  .skill-category-title {
+    font-size: 0.85rem;
+  }
+
+  .skill-item {
+    gap: 8px;
+    font-size: 0.75rem;
+  }
+
+  .skill-level {
+    padding: 5px 8px;
+    font-size: 0.6rem;
+  
   }
 }
