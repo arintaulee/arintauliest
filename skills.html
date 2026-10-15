@@ -5,11 +5,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills | My Royal CV</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* TECHNICAL SKILLS */
+    .royal-skills-category {
+      margin-top: 24px;
+    }
+
+    .royal-skills-category h3 {
+      color: #c7a15a;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      margin: 0 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(199, 161, 90, 0.35);
+    }
+
+    .royal-skill-row {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(199, 161, 90, 0.15);
+      color: #f2dfbd;
+      font-size: 0.9rem;
+    }
+
+    .royal-skill-name {
+      flex: 1 1 130px;
+      min-width: 0;
+    }
+
+    .royal-skill-badge {
+      display: inline-block !important;
+      flex: 0 0 auto;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.4;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .royal-advanced {
+      color: #e0bd73;
+      background: rgba(199, 161, 90, 0.13);
+      border: 1px solid #c7a15a;
+    }
+
+    .royal-intermediate {
+      color: #f2dfbd;
+      background: rgba(155, 38, 59, 0.25);
+      border: 1px solid #9b263b;
+    }
+
+    .royal-beginner {
+      color: #e0c7b5;
+      background: rgba(224, 199, 181, 0.07);
+      border: 1px solid rgba(224, 199, 181, 0.4);
+    }
+
+    .royal-skills-cta {
+      text-align: center;
+      margin: 28px 0;
+    }
+
+    @media (max-width: 480px) {
+      .royal-skills-category h3 {
+        font-size: 0.9rem;
+      }
+
+      .royal-skill-row {
+        gap: 8px;
+        font-size: 0.82rem;
+      }
+
+      .royal-skill-badge {
+        padding: 5px 8px;
+        font-size: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar">
     <a class="brand" href="index.html">♕ MY ROYAL CV</a>
+
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -31,52 +123,67 @@
     </div>
 
     <div class="grid-2">
+
+      <!-- TECHNICAL SKILLS -->
       <section class="panel">
         <h2>Technical Skills</h2>
 
-        <div class="skill">
-          <div class="skill-label">
-            <span>Canva's Editing</span><span>80%</span>
+        <div class="royal-skills-category">
+          <h3>✧ Design &amp; Creativity</h3>
+
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">Canva Editing</span>
+            <span class="royal-skill-badge royal-advanced">
+              Advanced
+            </span>
           </div>
-          <div class="progress"><span style="width:80%"></span></div>
+
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">Graphic Design</span>
+            <span class="royal-skill-badge royal-intermediate">
+              Intermediate
+            </span>
+          </div>
         </div>
 
-        <div class="skill">
-          <div class="skill-label">
-            <span>PYTHON</span><span>55%</span>
+        <div class="royal-skills-category">
+          <h3>✧ Programming &amp; Web Development</h3>
+
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">Python</span>
+            <span class="royal-skill-badge royal-intermediate">
+              Intermediate
+            </span>
           </div>
-          <div class="progress"><span style="width:55%"></span></div>
+
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">HTML</span>
+            <span class="royal-skill-badge royal-beginner">
+              Beginner
+            </span>
+          </div>
+
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">CSS</span>
+            <span class="royal-skill-badge royal-beginner">
+              Beginner
+            </span>
+          </div>
         </div>
 
-        <div class="skill">
-          <div class="skill-label">
-            <span>Microsoft Office</span><span>75%</span>
-          </div>
-          <div class="progress"><span style="width:75%"></span></div>
-        </div>
+        <div class="royal-skills-category">
+          <h3>✧ Productivity &amp; Office</h3>
 
-        <div class="skill">
-          <div class="skill-label">
-            <span>Graphic Design</span><span>60%</span>
+          <div class="royal-skill-row">
+            <span class="royal-skill-name">Microsoft Office</span>
+            <span class="royal-skill-badge royal-intermediate">
+              Intermediate
+            </span>
           </div>
-          <div class="progress"><span style="width:60%"></span></div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-label">
-            <span>HTML</span><span>20%</span>
-          </div>
-          <div class="progress"><span style="width:20%"></span></div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-label">
-            <span>CSS</span><span>25%</span>
-          </div>
-          <div class="progress"><span style="width:25%"></span></div>
         </div>
       </section>
 
+      <!-- PERSONAL SKILLS -->
       <section class="panel">
         <h2>Personal Skills</h2>
 
@@ -100,10 +207,13 @@
           <p>Organizing tasks and completing responsibilities.</p>
         </article>
       </section>
+
     </div>
 
-    <div style="text-align:center;">
-      <a class="btn" href="hobbies-projects.html">EXPLORE MY INTERESTS →</a>
+    <div class="royal-skills-cta">
+      <a class="btn" href="hobbies-projects.html">
+        EXPLORE MY INTERESTS →
+      </a>
     </div>
   </main>
 
