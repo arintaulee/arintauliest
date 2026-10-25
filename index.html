@@ -3,76 +3,469 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fairy Princess | My Royal CV</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Arintauli Tiara Mayarta Tampubolon</title>
+  <meta name="description" content="Portfolio mahasiswa Sistem Informasi semester 3.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar">
-    <a class="brand" href="index.html">MY ROYAL CV</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="nav-links">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="experience.html">Experience</a>
-      <a href="skills.html">Skills</a>
-      <a href="hobbies-projects.html">Hobbies</a>
-      <a href="support-system.html">Support System</a>
-      <a href="contact.html">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home">Ay<span>.</span>iens</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <main class="hero">
-    <section class="hero-copy">
-      <p class="eyebrow">✧ Welcome to my enchanted forest ✧</p>
+  <main>
 
-      <h1>
-        Hello, I'm<br>
-        <span class="gold">Arintauli Tiara Mayarta Tampubolon</span>
-      </h1>
+    <section id="home" class="section section-home">
+      <div class="blob blob-rose" data-speed="0.12"></div>
+      <div class="blob blob-gold" data-speed="-0.08"></div>
+      <div class="ring ring-lg" data-speed="0.06"></div>
+      <div class="gold-line gold-line-v"></div>
 
-      <p>
-        A dreamer with a curious mind, a creative soul,
-        and a heart that believes every little step can
-        lead to something extraordinary.
-      </p>
+      <div class="container section-content">
+        <div class="row align-items-center g-5">
 
-      <p class="magic-text">
-        "Even the smallest fairy can create the brightest magic."
-      </p>
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="intro intro-label" style="--d:.2s">Halo, selamat datang. Aku</p>
 
-      <a class="btn" href="about.html">ENTER MY JOURNEY ✧</a>
+            <h1 class="hero-name">
+              <span class="line"><span style="--d:.4s">Arintauli Tiara</span></span>
+              <span class="line"><span style="--d:.55s">Mayarta Tampubolon</span></span>
+            </h1>
 
-      <div class="fairy-divider">♧ ✧ 🧚🏻‍♀️ ✧ ♧</div>
-    </section>
+            <p class="intro hero-status" style="--d:.8s">
+              <i class="bi bi-mortarboard"></i> Mahasiswa Semester 3 &mdash; Sistem Informasi
+            </p>
 
-    <section class="hero-art">
-      <div class="portrait-frame">
-        <img src="arin.jpeg" alt="Foto profil Arintauli">
+            <p class="intro hero-desc" style="--d:.95s">
+              Halo! Aku Arin, seorang mahasiswi Sistem Informasi
+              di Budi Luhur University. Aku tertarik pada teknologi,
+              desain, dan hal-hal kreatif. Aku senang mempelajari
+              hal baru dan mengembangkan kemampuan melalui pengalaman.
+            </p>
+
+            <div class="intro d-flex flex-wrap gap-3 mt-4" style="--d:1.1s">
+              <a href="#about" class="btn btn-gold">Explore My Portfolio</a>
+              <a href="assets/cv.pdf" download class="btn btn-outline-gold">
+                <i class="bi bi-download me-2"></i>Download CV
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <div class="photo-frame intro" style="--d:.5s">
+              <i class="bi bi-person photo-placeholder"></i>
+              <img src="arin 1.jpeg" alt="Foto profil" onerror="this.style.display='none'">
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <p class="ornament">✧ A story yet to unfold ✧</p>
-      <p class="fairy-caption">A little fairy in a world of possibilities</p>
+      <span class="section-number">01 / 05</span>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll ke bawah">
+        <span class="mouse"><span class="wheel"></span></span>
+        <small>Scroll</small>
+      </a>
     </section>
+
+    <section id="about" class="section section-about">
+      <div class="blob blob-wine" data-speed="0.1"></div>
+      <div class="ring ring-sm" data-speed="-0.07"></div>
+
+      <div class="container section-content">
+        <div class="row g-5">
+
+          <div class="col-lg-5">
+            <div class="reveal" data-reveal="left">
+              <h2 class="display-heading">Tentang<br>Saya</h2>
+              <div class="gold-rule"></div>
+              <blockquote class="quote">
+                &ldquo;Built by discipline, refined by time.&rdquo;
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="reveal" data-reveal="right">
+              <p class="lead-text">
+                Aku mahasiswi yang tertarik dengan teknologi dan desain,
+                terutama proses mengubah sebuah ide menjadi tampilan yang menarik
+                dan mudah digunakan. Aku juga suka mencoba hal baru untuk menambah
+                pengalaman dan mengembangkan kemampuan.
+              </p>
+              <p>
+                Saya tertarik dengan UI/UX Design karena ingin menciptakan desain yang menarik dan mudah digunakan.
+                Saat ini, saya terus belajar dan mencari kesempatan magang sebagai Junior UI/UX Designer untuk mengembangkan kemampuan dan pengalaman..
+              </p>
+            </div>
+
+            <div class="row g-3 mt-2 stagger-group">
+              <div class="col-md-6">
+                <div class="info-card reveal">
+                  <i class="bi bi-compass"></i>
+                  <h3>Minat</h3>
+                  <p>Pengembangan web, desain UI/UX, dan desain grafis..</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-card reveal">
+                  <i class="bi bi-bullseye"></i>
+                  <h3>Tujuan Belajar</h3>
+                  <p>Memperdalam kemampuan dalam pengembangan website dan desain melalui berbagai proyek dan pengalaman baru.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-card reveal">
+                  <i class="bi bi-lightbulb"></i>
+                  <h3>Prinsip</h3>
+                  <p>I believe that growth comes from curiosity, consistency, and the courage to keep learning.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-card reveal">
+                  <i class="bi bi-mortarboard"></i>
+                  <h3>Pendidikan</h3>
+                  <p>S1 Sistem Informasi, Budi Luhur Iniversity</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <span class="section-number">02 / 05</span>
+    </section>
+
+    <section id="journey" class="section section-journey">
+      <div class="blob blob-rose-soft" data-speed="-0.1"></div>
+      <div class="gold-line gold-line-h"></div>
+
+      <div class="container section-content">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">MY JOURNEY</p>
+          <h2 class="display-heading">Education &amp; Experience</h2>
+          <p class="section-sub mx-auto">
+            Every chapter has shaped who I am today, from my early education
+            to the experiences that continue to help me grow.
+          </p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-fill" id="timelineFill"></div>
+
+          <div class="timeline-item reveal" data-reveal="left">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2013 – 2019</span>
+              <h3>Elementary School</h3>
+              <p class="t-place">SDN 08 Kendawangan</p>
+              <p>
+                My first step in education, where I built a foundation
+                in basic knowledge, discipline, and social interaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="right">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2019 – 2022</span>
+              <h3>Junior High School</h3>
+              <p class="t-place">SMPN 01 Rumpin</p>
+              <p>
+                A period of learning, exploring new interests, and
+                developing confidence, teamwork, and responsibility.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="left">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2022 – 2025</span>
+              <h3>Senior High School</h3>
+              <p class="t-place">SMAN 01 Rumpin</p>
+              <p>
+                Strengthened my communication and leadership skills
+                through school activities, extracurriculars, and Paskibra.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="right">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2025 – Present</span>
+              <h3>Bachelor's Degree in Information Systems</h3>
+              <p class="t-place">Universitas Budi Luhur</p>
+              <p>
+                Currently learning programming, database management,
+                system analysis, and UI/UX design to create digital
+                experiences that are useful and user-friendly.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="left">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2022 – 2025</span>
+              <h3>Paskibra Putra Mahardhika Chakti</h3>
+              <p class="t-place">PDD, Public Relations &amp; Information</p>
+              <p>
+                Managed Social Media content and maintained communication
+                with other schools, developing creativity, teamwork,
+                and organizational skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="right">
+            <span class="timeline-dot"></span>
+            <div class="t-card">
+              <span class="t-date">2025 – Present</span>
+              <h3>Committee &amp; Volunteer Activities</h3>
+              <p class="t-place">Melostra (Perkap) &amp; BLDC 2.0 (PDD)</p>
+              <p>
+                Participated in event committees and volunteer activities,
+                learning to collaborate, manage time, and contribute
+                responsibly to shared goals.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <span class="section-number">03 / 05</span>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <div class="blob blob-gold-soft" data-speed="0.1"></div>
+      <div class="ring ring-md" data-speed="-0.05"></div>
+
+      <div class="container section-content">
+        <div class="mb-5 reveal">
+          <h2 class="display-heading">Skills &amp; Projects</h2>
+          <p class="section-sub">Yang sedang aku pelajari, dan hasil belajarnya.</p>
+        </div>
+
+        <div class="row g-4 mb-5 stagger-group">
+          <div class="col-lg-6">
+            <div class="skills-panel reveal">
+              <h3 class="skills-title">Technical Skills</h3>
+
+              <div class="skill-category">
+                <h4>✧ Design &amp; Creativity</h4>
+                <div class="skill-item">
+                  <span>Canva Editing</span>
+                  <span class="skill-badge advanced">Advanced</span>
+                </div>
+                <div class="skill-item">
+                  <span>Graphic Design</span>
+                  <span class="skill-badge intermediate">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>✧ Programming &amp; Web Development</h4>
+                <div class="skill-item">
+                  <span>HTML</span>
+                  <span class="skill-badge beginner">Beginner</span>
+                </div>
+                <div class="skill-item">
+                  <span>CSS</span>
+                  <span class="skill-badge beginner">Beginner</span>
+                </div>
+                <div class="skill-item">
+                  <span>JavaScript</span>
+                  <span class="skill-badge beginner">Beginner</span>
+                </div>
+                <div class="skill-item">
+                  <span>Bootstrap</span>
+                  <span class="skill-badge beginner">Beginner</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>✧ Productivity &amp; Office</h4>
+                <div class="skill-item">
+                  <span>Microsoft Office</span>
+                  <span class="skill-badge intermediate">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-panel reveal">
+              <h3 class="skills-title">Personal Skills</h3>
+
+              <div class="personal-skill-card">
+                <h4>♛ Communication</h4>
+                <p>Expressing ideas and listening to others effectively.</p>
+              </div>
+
+              <div class="personal-skill-card">
+                <h4>♛ Teamwork</h4>
+                <p>Working together and respecting different perspectives.</p>
+              </div>
+
+              <div class="personal-skill-card">
+                <h4>♛ Creativity</h4>
+                <p>Finding fresh ideas and exploring new possibilities.</p>
+              </div>
+
+              <div class="personal-skill-card">
+                <h4>♛ Time Management</h4>
+                <p>Organizing tasks and managing time effectively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-heading reveal">
+          <h3 class="skills-title">My Projects</h3>
+        </div>
+
+        <div class="row g-4 stagger-group">
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div class="project-thumb">
+                <i class="bi bi-window-stack"></i>
+              </div>
+              <div class="project-body">
+                <h3>Web Usaha Laundry</h3>
+                <p>Membuat dan MengUpgrade Sistem Informasi Pada Sebuah Usaha Laundry</p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Google Antigravity</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div class="project-thumb thumb-2">
+                <i class="bi bi-database"></i>
+              </div>
+              <div class="project-body">
+                <h3>Database Design Laundry</h3>
+                <p>Perancangan Basis Data menggunakan ERD, LRS, serta struktur table untuk pengelolaan transaksi laundry</p>
+                <div class="tags">
+                  <span>ERD</span>
+                  <span>LRS</span>
+                  <span>canva</span>
+                  <span>Perancangan Basis Data</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card reveal">
+              <div class="project-thumb thumb-3">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="project-body">
+                <h3>Website CV Personal</h3>
+                <p>Pengembangan Website Personal untuk menampilkan profil, kemampuan, dan pengalaman guna mendukung lamaran magang</p>
+                <div class="tags">
+                  <span>UI/UX Design</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <span class="section-number">04 / 05</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="blob blob-rose" data-speed="0.08"></div>
+      <div class="ring ring-lg ring-center" data-speed="0.04"></div>
+
+      <div class="container section-content text-center">
+        <div class="reveal">
+          <h2 class="display-heading contact-heading">Let&rsquo;s Connect</h2>
+          <div class="gold-rule mx-auto"></div>
+          <p class="section-sub mx-auto">
+            Terima kasih sudah berkunjung. Aku senang berkenalan, berdiskusi, atau bertukar
+            cerita tentang belajar. Silakan hubungi aku.
+          </p>
+        </div>
+
+        <div class="contact-links stagger-group">
+          <a href="mailto:tiaramyrt@gmail.com" class="contact-link reveal">
+            <i class="bi bi-envelope"></i><span>Email</span>
+          </a>
+          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" class="contact-link reveal">
+            <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/arintauli-tiara-mayarta-tampubolon-998a21446" target="_blank" rel="noopener" class="contact-link reveal">
+            <i class="bi bi-github"></i><span>GitHub</span>
+          </a>
+          <a href="https://instagram.com/arinisnthere" target="_blank" rel="noopener" class="contact-link reveal">
+            <i class="bi bi-instagram"></i><span>Instagram</span>
+          </a>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3 reveal">
+          <a href="mailto:tiaramyrt@gmail.com" class="btn btn-gold">
+            <i class="bi bi-send me-2"></i>Kirim Pesan
+          </a>
+          <a href="#home" class="btn btn-outline-gold">
+            <i class="bi bi-arrow-up me-2"></i>Kembali ke Atas
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        &copy; <span id="year"></span> Arintauli Tiara Mayarta Tampubolon. Dibuat dengan HTML, CSS, JavaScript &amp; Bootstrap.
+      </footer>
+      <span class="section-number">05 / 05</span>
+    </section>
+
   </main>
 
-  <section class="welcome-note">
-    <p class="eyebrow">A little bit of magic</p>
-    <h2>Every Dream Has Its Own <span class="gold">Fairy Tale</span></h2>
-    <p>
-      This is my little corner of the world, where my journey,
-      experiences, dreams, and precious memories come together.
-      Welcome to my story!
-    </p>
-    <a class="btn btn-outline" href="experience.html">Discover My Journey ✧</a>
-  </section>
-
-  <footer>
-    <div class="footer-brand">✧ MY ROYAL CV ✧</div>
-    <p>Made with ♡, fairy dust, and a little bit of magic.</p>
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
